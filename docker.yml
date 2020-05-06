@@ -8,4 +8,4 @@
     source: build
 
 - name: Run docker Container  
-  shell: docker run -p 8081:8081 saurabh240991/jenkinsfreestyle:v2 
+  shell: docker run -d -p 8081:8081 saurabh240991/jenkinsfreestyle:v2 
