@@ -1,0 +1,11 @@
+- name: Build an image and push it to a private repo
+  docker_image:
+    build:
+      path: ./
+    name: saurabh240991/jenkinsfreestyle
+    tag: v2
+    push: yes
+    source: build
+
+- name: Run docker Container  
+  shell: docker run -p 8081:8081 saurabh240991/jenkinsfreestyle:v2 
