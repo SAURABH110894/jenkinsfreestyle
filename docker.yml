@@ -5,6 +5,8 @@
     name: saurabh240991/jenkinsfreestyle
     push: yes
     source: build
+  become: yes
 
 - name: Run docker Container  
   shell: docker run -d -p 8081:8081 saurabh240991/jenkinsfreestyle
+  become: yes
