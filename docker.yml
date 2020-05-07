@@ -3,8 +3,9 @@
     build:
       path: ./
     name: saurabh240991/jenkinsfreestyle
+    tag: v4
     push: yes
     source: build
 
 - name: Run docker Container  
-  shell: docker run -d -p 8081:8081 saurabh240991/jenkinsfreestyle
+  shell: docker run -d -p 8081:8081 saurabh240991/jenkinsfreestyle:v4
