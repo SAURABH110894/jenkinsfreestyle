@@ -1,4 +1,6 @@
 ---
 - hosts: localhost
+  vars:
+    version: "{{ tags }}"
   tasks: 
    - include: docker.yml
