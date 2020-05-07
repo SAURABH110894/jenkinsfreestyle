@@ -1,5 +1,5 @@
 - name: Stop and Remove docker Container  
-  shell: docker rm $(docker stop $(docker ps -a -q --filter ancestor=saurabh240991/jenkinsfreestyle:{{version}} --format="{{.ID}}"))
+  shell: "docker rm $(docker stop $(docker ps -a -q --filter ancestor=saurabh240991/jenkinsfreestyle:{{version}} --format="{{.ID}}"))"
 
 - name: Build an image and push it to a private repo
   docker_image:
